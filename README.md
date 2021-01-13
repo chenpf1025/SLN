@@ -11,7 +11,7 @@ This is the official repository for the paper [Noise against noise: stochastic l
 
 
 ## Overview
-In this paper, we analysis the implicit regularization effect of stochastic label noise (SLN) and show that it can improve model performance on datasets with "inherent" label corruption. In general, SLN shall be effective when there is severe overfitting. The implementation of the standard SLN simply requires two lines of code in the training (the function train_noise in utils.py):
+In this paper, we analyze the implicit regularization effect of stochastic label noise (SLN) and show that it can improve model performance on datasets with "inherent" label corruption. In general, SLN shall be effective when there is severe overfitting. The implementation of the standard SLN simply requires two lines of code in the training (the function train_noise in utils.py):
 ```
 if args.sigma>0:
     target += args.sigma*torch.randn(target.size()).to(device)
