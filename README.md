@@ -3,7 +3,7 @@ This is the official repository for the paper [Noise against noise: stochastic l
 ```
 @inproceedings{chen2021noise,
     title={Noise against noise: stochastic label noise helps combat inherent label noise},
-    author={Chen, Pengfei and Ye, Junjie and Chen, Guangyong and Zhao, Jingwei and Heng, Pheng-Ann},
+    author={Chen, Pengfei and Chen, Guangyong and Ye, Junjie and Zhao, Jingwei and Heng, Pheng-Ann},
     booktitle={International Conference on Learning Representations},
     year={2021}
 }
