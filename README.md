@@ -3,19 +3,25 @@ This is the official repository for the paper [Noise against noise: stochastic l
 ```
 @inproceedings{chen2021noise,
     title={Noise against noise: stochastic label noise helps combat inherent label noise},
-	author={Chen, Pengfei and Ye, Junjie and Chen, Guangyong and Zhao, Jingwei and Heng, Pheng-Ann},
-	booktitle={International Conference on Learning Representations},
-	year={2021}
+    author={Chen, Pengfei and Ye, Junjie and Chen, Guangyong and Zhao, Jingwei and Heng, Pheng-Ann},
+    booktitle={International Conference on Learning Representations},
+    year={2021}
 }
 ```
 
 
 ## Overview
-In this paper, we analysis the implicit regularization effect of stochastic label noise (SLN) and show that it can improve model performance on datasets with "inherent" label corruption. In general, SLN shall be effective when there is severe overfitting.
+In this paper, we analysis the implicit regularization effect of stochastic label noise (SLN) and show that it can improve model performance on datasets with "inherent" label corruption. In general, SLN shall be effective when there is severe overfitting. The implementation of the standard SLN simply requires two lines of code in the training (the function train_noise in utils.py):
+```
+if args.sigma>0:
+    target += args.sigma*torch.randn(target.size()).to(device)
+```
 
-SLN induces SGD noise that helps the model escape sharp local minima and prevents overconfident predictions, as illustrated in the figure.
+We show that the SGD noise induced by SLN helps the model escape sharp local minima and prevents overconfident predictions, as illustrated in the figure.
 
-<div align=center><img src="https://github.com/chenpf1025/SLN/blob/master/results/landscape.png" width = "100%"/></div>
+<div align=center><img src="https://github.com/chenpf1025/SLN/blob/master/results/landscape.PNG" width = "100%"/></div>
+
+
 
 
 ## Experiments
