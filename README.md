@@ -1,5 +1,5 @@
 # Noise against noise: stochastic label noise helps combat inherent label noise.
-This is the official repository for the paper [Noise against noise: stochastic label noise helps combat inherent label noise](https://openreview.net/forum?id=80FMcTSZ6J0). (Accepted by ICLR 2021).
+This is the official repository for the paper [Noise against noise: stochastic label noise helps combat inherent label noise](https://openreview.net/forum?id=80FMcTSZ6J0). (ICLR 2021, Spotlight).
 ```
 @inproceedings{chen2021noise,
     title={Noise against noise: stochastic label noise helps combat inherent label noise},
